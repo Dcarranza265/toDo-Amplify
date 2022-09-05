@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "todolist",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authtodolista1b537f3",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-todolist-dev-171520-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/8701067eb6a926d73a025d9667344f3f021037b8"
+}
